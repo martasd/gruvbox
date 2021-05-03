@@ -584,7 +584,7 @@ hi! link Conditional GruvboxRed
 " for, do, while, etc.
 hi! link Repeat GruvboxRed
 " case, default, etc.
-hi! link Label GruvboxRed
+hi! link Label GruvboxOrange
 " try, catch, throw
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
@@ -602,19 +602,19 @@ hi! link PreProc GruvboxAqua
 " Preprocessor #include
 hi! link Include GruvboxAqua
 " Preprocessor #define
-hi! link Define GruvboxAqua
+hi! link Define GruvboxRed
 " Same as Define
 hi! link Macro GruvboxAqua
 " Preprocessor #if, #else, #endif, etc.
 hi! link PreCondit GruvboxAqua
 
 " Generic constant
-hi! link Constant GruvboxPurple
+hi! link Constant GruvboxAqua
 " Character constant: 'c', '/n'
 hi! link Character GruvboxPurple
 " String constant: "this is a string"
 if g:gruvbox_improved_strings == 0
-  call s:HL('String',  s:green, s:none, s:italicize_strings)
+  call s:HL('String',  s:blue, s:none, s:italicize_strings)
 else
   call s:HL('String',  s:fg1, s:bg1, s:italicize_strings)
 endif
